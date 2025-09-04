@@ -10,20 +10,26 @@ html, body {
 body{
   display: grid;
   grid-template-columns: 1fr 1fr 100px;
-  grid-template-rows: 150px 200vh 100vh 100vh 100px;
-  grid-template-areas: "header header header" "welcome-section welcome-section welcome-section"
+  grid-template-rows: 75px 200vh 100vh 100vh 100px 100px;
+  grid-template-areas: "header header header" 
+  "welcome-section welcome-section welcome-section"
   "projects projects projects"
   "projects projects projects"
+  "text text text"
   "info info info";
 }
 #header{
   display: flex;
   background-color: black;
   grid-area: header;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items:start;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F01%2F06%2F18%2F38%2Fblack-background-1958574_960_720.jpg&f=1&nofb=1&ipt=ae9b96c242d1daf942efc544f614d42c3af121cd2db36688e254ff1b8ba05d09");
   background-size: cover;
   background-position: center;
+  position: fixed;
+  height: 10%;
+  width: 100%;
 }
 #welcome-section{
   background: linear-gradient(180deg, black, rgb(81, 81, 81));
@@ -37,18 +43,26 @@ body{
 .nav-link{
   text-decoration: none;
   color: #4e6918;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 #navbar{
-  position: fixed;
+  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 25%;
+  height: 100%;
+  width: 100%;
+  gap: 25%;
 }
 
-
+.project-tile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
 
 #projects{
@@ -95,12 +109,26 @@ gap: 20px
   align-items: center;
 }
 .toolpip{
+  grid-area: toolpip;
   display: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-bottom: 50%; 
 }
 .info.contact:hover .toolpip{
   display: block;
+}
+
+.whiteText{
+  margin: 0;
+  background-color: orange;
+  grid-area: text;
+  text-align: center;
+  
+}
+
+h2{
+  font-size: 40px;
+  margin-right: 60%;
+  text-decoration:underline;
 }
