@@ -1,90 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeiy Portfolio Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body id="home">
     <header id="header">
       <nav id="navbar">
-        <div><a class="nav-link" href="#home">Home</a></div>
-        <div><a class="nav-link" href="#projects">Projects</a></div>
-        <div><a class="nav-link" href="#footer">Info</a></div>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#footer">Info</a>
       </nav>
     </header>
+
     <section id="welcome-section">
-      <h1>Hi, I’m Zeiy — a self-taught web developer passionate about building dynamic and efficient web applications.</h1>
-      <p>"Feel free to explore my projects and learn more about my work.
-I’m always open to new collaborations and opportunities."
+      <h1>
+        Hi, I’m Zeiy — a self-taught web developer passionate about building
+        dynamic and efficient web applications.
+      </h1>
+      <p>
+        Feel free to explore my projects and learn more about my work.
+        I’m always open to new collaborations and opportunities.
+      </p>
     </section>
 
     <section id="projects">
-        <div class="project-tile first">
-          <h2>Booflix (netflix-like)</h2>
-          <p>my best project for now with frontend on netlify and backend on render</p>
-        <a href="https://booflix.netlify.app/">
-          <img src="image\booflix.png" alt="Booflix.netlify.app">
-        </a><p>if you want to see the <a href="https://github.com/Zeiyar/Booflix-Frontend">code</a></p>
+      <div class="project-tile first">
+        <h2>Booflix (Netflix-like)</h2>
+        <p>My best project so far, with frontend on Netlify and backend on Render.</p>
+        <a href="https://booflix.netlify.app/" target="_blank">
+          <img src="image/booflix.png" alt="Booflix project" />
+        </a>
         <p>
-          My most advanced project so far, featuring a frontend hosted on Netlify 
-          and a backend on Render. I spent about a month developing it, using Backblaze
-          B2 for video storage (including Dragon Ball VA).Users can explore trailers,
-          watch videos, subscribe, and manage their accounts.The app is secured with 
-          cookies, JWT, and bcrypt, and could later include IP-based subscription limits.
+          <a href="https://github.com/Zeiyar/Booflix-Frontend" target="_blank">View code</a>
         </p>
-        </div>
+        <p>
+          My most advanced project so far, featuring a frontend hosted on Netlify
+          and a backend on Render. It uses Backblaze B2 for video storage,
+          JWT authentication, and cookies for user sessions.
+        </p>
+      </div>
 
       <div class="project-tile second">
-          <h2>BoulbiMoovie (blog)</h2>
-          <p>first project on fullstack with netlify and render</p>
-        <a href="https://reablog.netlify.app/">
-          <img src="image\BoulbiMoovie.png" alt="Capture of the Blog : BoulbiMoovie">
+        <h2>BoulbiMoovie (Blog)</h2>
+        <p>First fullstack project with Netlify and Render.</p>
+        <a href="https://reablog.netlify.app/" target="_blank">
+          <img src="image/BoulbiMoovie.png" alt="Blog BoulbiMoovie" />
         </a>
-        <p><a href="https://github.com/Zeiyar/blog-React">CODE</a></p>
-          <p>
-            My first full-stack project, hosted on Netlify and Render.
-            I spent another month building it — a great opportunity to learn about routes,
-            models, middleware, and CRUD operations.Users can sign up, publish, edit,
-            and delete their own articles, but cannot modify others’.The blog also 
-            supports comments and ratings, allowing users to review posts.You can access 
-            your personal dashboard to view your content.
-          </p>
-          <small>(Booflix was more advanced, but this project helped me master the basics.)</small>
+        <p><a href="https://github.com/Zeiyar/blog-React" target="_blank">View code</a></p>
+        <p>
+          My first fullstack project. It supports user accounts, CRUD articles,
+          comments, and ratings. It helped me master routes, models, and middleware.
+        </p>
       </div>
 
       <div class="project-tile third">
-        <h2>Dashboard Meteo</h2>
-        <a href="https://github.com/Zeiyar/dashboardMeteo">
-          <img src="image\DashboardMeteo.png" alt="DashboardMeteo : capture">
+        <h2>Dashboard Météo</h2>
+        <a href="https://github.com/Zeiyar/dashboardMeteo" target="_blank">
+          <img src="image/DashboardMeteo.png" alt="Dashboard Meteo preview" />
         </a>
         <p>
-          This project focuses mainly on API integration and styling.
-          It allows users to check the weather forecast up to 14 days ahead.
-          I plan to upgrade it into a full-stack version in the future.
-        </p>
-        <small>P.S. I don't actually live in Paris!</small>
-      </div>
-
-        <div class="project-tile fourth">
-                 <h2>To-do list :</h2>
-        <a href="https://zeiyar.github.io/ToDoList/">
-          <img src=image\todolist.png height="80%" width="100%">
-        </a>
-        <p>
-          A simple To-Do List app that saves tasks using localStorage (not yet full CRUD).
-          I plan to improve it in the future.
+          Project focused on API integration and styling. Displays up to 14 days
+          of weather forecast.
         </p>
       </div>
 
+      <div class="project-tile fourth">
+        <h2>To-Do List</h2>
+        <a href="https://zeiyar.github.io/ToDoList/" target="_blank">
+          <img src="image/todolist.png" alt="ToDoList app preview" />
+        </a>
+        <p>
+          A simple To-Do List app that saves tasks using localStorage.
+          Will evolve into full CRUD soon.
+        </p>
+      </div>
     </section>
-    <p class="whiteText">"I’ve learned a lot from FreeCodeCamp. By clicking the icon on the left, you can explore some of my projects — from web design and data structures in JavaScript to more recent work involving data handling."</p>
-    <footer id="footer">
-      <div class="info"><a href="https://www.freecodecamp.org/zeiyar" target="_blank" rel="noopener noreferrer" id="profile-link"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/freecodecamp.svg" height=50px alt="freecodecamp icon" class="info"></a></div>
-      
-      <div class="info"><a href="https://github.com/Zeiyar" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" height=50px alt="github icon"></a></div>
 
-      <div class="info contact"><img src="https://static.thenounproject.com/png/phone-email-icon-93548-512.png" height=50px><div class="toolpip">0783051635<br>marieycorentin97@gmail.com</div></div>
+    <p class="whiteText">
+      I’ve learned a lot from FreeCodeCamp. By clicking the icon below, you can
+      explore some of my projects — from web design and data structures in
+      JavaScript to more recent backend work.
+    </p>
+
+    <footer id="footer">
+      <div class="info">
+        <a href="https://www.freecodecamp.org/zeiyar" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/freecodecamp.svg"
+            alt="FreeCodeCamp"
+            height="50"
+          />
+        </a>
+      </div>
+
+      <div class="info">
+        <a href="https://github.com/Zeiyar" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+            alt="GitHub"
+            height="50"
+          />
+        </a>
+      </div>
+
+      <div class="info contact">
+        <img
+          src="https://static.thenounproject.com/png/phone-email-icon-93548-512.png"
+          alt="contact icon"
+          height="50"
+        />
+        <div class="toolpip">
+          0783051635 <br />
+          marieycorentin97@gmail.com
+        </div>
+      </div>
     </footer>
   </body>
+</html>
