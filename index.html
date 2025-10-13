@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zeiy Portfolio Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body id="home">
+    <header id="header">
+      <nav id="navbar">
+        <div><a class="nav-link" href="#home">Home</a></div>
+        <div><a class="nav-link" href="#projects">Projects</a></div>
+        <div><a class="nav-link" href="#footer">Info</a></div>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>Hi, I’m Zeiy — a self-taught web developer passionate about building dynamic and efficient web applications.</h1>
+      <p>"Feel free to explore my projects and learn more about my work.
+I’m always open to new collaborations and opportunities."
+    </section>
+
+    <section id="projects">
+        <div class="project-tile first">
+          <h2>Booflix (netflix-like)</h2>
+          <p>my best project for now with frontend on netlify and backend on render</p>
+        <a href="https://booflix.netlify.app/">
+          <img src="image\booflix.png" alt="Booflix.netlify.app">
+        </a><p>if you want to see the <a href="https://github.com/Zeiyar/Booflix-Frontend">code</a></p>
+        <p>
+          My most advanced project so far, featuring a frontend hosted on Netlify 
+          and a backend on Render. I spent about a month developing it, using Backblaze
+          B2 for video storage (including Dragon Ball VA).Users can explore trailers,
+          watch videos, subscribe, and manage their accounts.The app is secured with 
+          cookies, JWT, and bcrypt, and could later include IP-based subscription limits.
+        </p>
+        </div>
+
+      <div class="project-tile second">
+          <h2>BoulbiMoovie (blog)</h2>
+          <p>first project on fullstack with netlify and render</p>
+        <a href="https://reablog.netlify.app/">
+          <img src="image\BoulbiMoovie.png" alt="Capture of the Blog : BoulbiMoovie">
+        </a>
+        <p><a href="https://github.com/Zeiyar/blog-React">CODE</a></p>
+          <p>
+            My first full-stack project, hosted on Netlify and Render.
+            I spent another month building it — a great opportunity to learn about routes,
+            models, middleware, and CRUD operations.Users can sign up, publish, edit,
+            and delete their own articles, but cannot modify others’.The blog also 
+            supports comments and ratings, allowing users to review posts.You can access 
+            your personal dashboard to view your content.
+          </p>
+          <small>(Booflix was more advanced, but this project helped me master the basics.)</small>
+      </div>
+
+      <div class="project-tile third">
+        <h2>Dashboard Meteo</h2>
+        <a href="https://github.com/Zeiyar/dashboardMeteo">
+          <img src="image\DashboardMeteo.png" alt="DashboardMeteo : capture">
+        </a>
+        <p>
+          This project focuses mainly on API integration and styling.
+          It allows users to check the weather forecast up to 14 days ahead.
+          I plan to upgrade it into a full-stack version in the future.
+        </p>
+        <small>P.S. I don't actually live in Paris!</small>
+      </div>
+
+        <div class="project-tile fourth"></div>
+                 <h2>To-do list :</h2>
+        <a href="https://zeiyar.github.io/ToDoList/">
+          <img src=image\todolist.png height="80%" width="100%">
+        </a>
+        <p>
+          A simple To-Do List app that saves tasks using localStorage (not yet full CRUD).
+          I plan to improve it in the future.
+        </p>
+      </div>
+
+    </section>
+    <p class="whiteText">"I’ve learned a lot from FreeCodeCamp. By clicking the icon on the left, you can explore some of my projects — from web design and data structures in JavaScript to more recent work involving data handling."</p>
+    <footer id="footer">
+      <div class="info"><a href="https://www.freecodecamp.org/zeiyar" target="_blank" rel="noopener noreferrer" id="profile-link"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/freecodecamp.svg" height=50px alt="freecodecamp icon" class="info"></a></div>
+      
+      <div class="info"><a href="https://github.com/Zeiyar" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" height=50px alt="github icon"></a></div>
+
+      <div class="info contact"><img src="https://static.thenounproject.com/png/phone-email-icon-93548-512.png" height=50px><div class="toolpip">0783051635<br>marieycorentin97@gmail.com</div></div>
+    </footer>
+  </body>
+</html>
