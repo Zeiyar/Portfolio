@@ -1,112 +1,69 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html, body {
   margin: 0;
   padding: 0;
-}
-
-html, body {
-  width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  scroll-behavior: smooth;
+  color: white;
   background: linear-gradient(180deg, black, rgb(81,81,81), orange, #f1be32);
-  color: #fff;
-  transition: background 0.6s ease;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  transition: background 0.5s ease;
 }
 
-/* HEADER FIXE */
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.85);
-  z-index: 100;
-}
-
-#navbar {
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
-}
-
-.nav-link {
-  color: #f1be32;
-  text-decoration: none;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: orange;
-}
-
-/* WELCOME SECTION */
-#welcome-section {
-  padding: 120px 20px 80px;
-  text-align: center;
-  font-size: 2.5rem;
-  min-height: 80vh;
-  line-height: 1.6;
-}
-
-/* === SECTION PROJECTS === */
+/* SECTION PROJECTS */
 #projects {
   position: relative;
-  padding: 120px 5%;
-  min-height: 150vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  column-gap: 40px;
-  row-gap: 0;
+  min-height: 200vh; /* page longue */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
 }
 
-/* Carte projet */
+/* Chaque projet est centré en colonne */
 .project-tile {
   position: relative;
-  margin-top: -120px; /* effet chevauchement */
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
-  padding: 20px;
-  overflow: hidden;
-  text-align: center;
+  width: 60%;
+  margin-top: -100px; /* chevauchement */
+  transition: transform 0.5s ease, z-index 0.3s ease;
   cursor: pointer;
-  transition: all 0.5s ease;
-  backdrop-filter: blur(3px);
+  z-index: 1;
 }
 
-/* Quand on survole la section projets → fond devient noir */
-#projects:hover ~ body,
-body.projects-hover {
-  background: black;
-}
-
-/* Image du projet */
+/* Image de base */
 .project-tile img {
   width: 100%;
-  border-radius: 8px;
-  transition: opacity 0.4s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  transition: filter 0.4s ease;
 }
 
-/* Texte du projet caché par défaut */
+/* Boîte d’infos cachée par défaut */
 .project-info {
-  opacity: 0;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0,0,0,0.9);
-  color: #f1be32;
+  border-radius: 20px;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
   transition: opacity 0.4s ease;
-  border-radius: 12px;
-  padding: 20px;
+}
+
+.project-info h2 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.project-info p {
+  color: #f1be32;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 /* Effet au survol */
@@ -116,40 +73,27 @@ body.projects-hover {
 }
 
 .project-tile:hover img {
-  opacity: 0.1;
+  filter: brightness(0.2);
 }
 
 .project-tile:hover .project-info {
   opacity: 1;
 }
 
-/* === FOOTER === */
-#footer {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  background: linear-gradient(180deg, orange, #f1be32);
-  padding: 60px 10px;
-  align-items: center;
+/* Quand un projet est survolé : fond global devient noir */
+#projects:hover {
+  background: rgba(0,0,0,0.95);
+  transition: background 0.5s ease;
 }
 
-.info img {
-  height: 50px;
-  filter: brightness(0) invert(0.9);
-  transition: transform 0.3s ease;
+h1{
+  font-size: large;
 }
 
-.info img:hover {
-  transform: scale(1.1);
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  #projects {
-    grid-template-columns: 1fr;
-  }
+/* Responsive */
+@media (max-width: 768px) {
   .project-tile {
-    margin-top: -80px;
+    width: 85%;
+    margin-top: -60px;
   }
 }
