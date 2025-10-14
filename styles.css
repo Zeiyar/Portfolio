@@ -8,6 +8,7 @@ html, body {
   overflow-x: hidden;
   transition: background 0.5s ease;
   min-height: 1500px;
+  text-align: center;
 }
 /*Header*/
 #header {
@@ -44,13 +45,12 @@ html, body {
 }
 /* --- WELCOME SECTION --- */
 #welcome-section {
-  background: linear-gradient(180deg, black, rgb(81, 81, 81));
   color: #f1be32;
   text-align: center;
   padding: 80px 20px;
   margin-top: 75px;
   grid-area: welcome-section;
-  font-size: 2.5vh;
+  font-size: 2vh;
   line-height: 1.6;
 }
 
@@ -167,12 +167,12 @@ h1{
 
 .info.contact:hover .toolpip {
   display: block;
+  cursor: pointer;
 }
 /* --- TEXTE INTERMEDIAIRE --- */
 .whiteText {
   margin: 0;
   padding: 40px 20px; 
-  background-color: orange;
   grid-area: text;
   text-align: center;
   font-size: 1.2rem;
