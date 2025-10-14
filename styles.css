@@ -7,7 +7,7 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   transition: background 0.5s ease;
-  min-height: 1000px;
+  min-height: 1500px;
 }
 /*Header*/
 #header {
@@ -42,6 +42,18 @@ html, body {
 .nav-link:hover {
   color: orange;
 }
+/* --- WELCOME SECTION --- */
+#welcome-section {
+  background: linear-gradient(180deg, black, rgb(81, 81, 81));
+  color: #f1be32;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 75px;
+  grid-area: welcome-section;
+  font-size: 2.5vh;
+  line-height: 1.6;
+}
+
 /* SECTION PROJECTS */
 #projects {
   position: relative;
@@ -114,21 +126,14 @@ html, body {
   opacity: 1;
 }
 
-/* Quand un projet est survolé : fond global devient noir */
-#projects:hover {
-  background: rgba(0,0,0,0.95);
-  transition: background 0.5s ease;
-}
-
 h1{
-  font-size: large;
+  font-size: xx-large;
 }
 #footer {
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
-  background: linear-gradient(180deg, orange, #f1be32);
   padding: 60px 10px;
   align-items: center;
 }
@@ -141,6 +146,38 @@ h1{
 
 .info img:hover {
   transform: scale(1.1);
+}
+/* --- TOOLTIP CONTACT --- */
+.toolpip {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  position: absolute;
+  transform: translateY(-60px);
+}
+
+.info.contact {
+  position: relative;
+}
+
+.info.contact:hover .toolpip {
+  display: block;
+}
+/* --- TEXTE INTERMEDIAIRE --- */
+.whiteText {
+  margin: 0;
+  padding: 40px 20px; 
+  background-color: orange;
+  grid-area: text;
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.6;
 }
 /* Responsive */
 @media (max-width: 768px) {
