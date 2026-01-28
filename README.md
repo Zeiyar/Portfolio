@@ -71,8 +71,7 @@ Copier le code
 
 Tu peux ouvrir le fichier `index.html` directement dans ton navigateur, ou le déployer en ligne (ex : GitHub Pages, Netlify, Vercel) pour un aperçu public.
 
-🔗 Version déployée (si disponible) : *(ajoute ici le lien si tu l’as publié)*
-
+🔗 Version déployée : (https://zeiyar.github.io/Portfolio/)
 ---
 
 ## 📌 Sections du portfolio
@@ -128,6 +127,6 @@ Ce portfolio est *ma vitrine professionnelle* 📁 ✨
 ## 📎 Liens utiles
 
 - 👉 Mon GitHub : https://github.com/Zeiyar  
-- 👉 Mes projets : liste visible dans ce portfolio
+- 👉 Mes projets : liste visible dans ce portfolio + ceux dans ce github
 
 ---
